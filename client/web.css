@@ -1,0 +1,361 @@
+ul li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei";
+}
+
+.top {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 320px;
+    height: 60px;
+
+}
+
+.top #logo {
+    width: 71.6px;
+    height: 35.2px;
+    margin-right: 30px;
+    background-color: white;
+    /* border-radius: 8px; */
+    padding: 13px ;
+}
+.topleft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.topleft span {
+    color: white;
+    font-size: 17px;
+    /* font-weight: bold; */
+    letter-spacing: 1.5PX;
+
+}
+.top .ulli {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top ul li {
+    margin-left: 40px;
+}
+.top li a,
+.top li span  {
+    color: white;
+    font-size:16px;
+    /* font-weight: bold; */
+    letter-spacing: 1.5px;
+}
+
+.top ul li div {
+    height:30px;
+    width: 100px;
+    border-radius: 16px;
+    line-height: 30px;
+    text-align: center;
+    transition: all 0.1s linear;
+    
+}
+.top ul li div:hover{
+    background-color: rgb(70, 70, 70);   
+}
+
+.main .content {
+    width: 70%;
+    /* background-color: rgb(83, 83, 83); */
+    height: 1000px;
+    margin: 0 auto;
+}
+.main .up {
+    width: 100%;
+    height: 750px;
+    /* background-color: rgb(177, 177, 255); */
+    /* border-bottom: 2px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.main .up .showdata .fengche,
+.top .fengche {
+    animation: fengche 1.5s linear ;
+}
+
+@keyframes fengche {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.main .up .showdata .pictype
+{
+    width: 300px;
+    height: 50px;
+    /* background-color: beige; */
+}
+.main .up .showdata {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.main .up .showdata ul
+{
+    display: flex;
+    font-size: 20px;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+.main .up .showdata ul li
+{
+    border: 2px solid black;
+    /* padding: 5px; */
+    border-radius: 15px;
+    color: white;
+    background-color: black;
+    padding: 0 20px;
+    margin: 0 10px;
+}
+.main .up #wel {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.main .up .showpic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.main .up #pic{
+    width: 800px;
+    height: 470px;
+    border: 8px solid black;
+    border-radius: 30px;
+    margin-bottom: 80px;
+    box-shadow: 0 1px 2px black;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .up #picword{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    margin-bottom: 10px;
+}
+.main .bottom {
+    width: 100%;
+    height: 200px;
+    /* background-color: rgb(177, 177, 255); */
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.main .bottom #fileinput {
+    display: none;
+}
+.main .bottom .websocket,
+.main .bottom .selfile,
+.main .bottom .sendfile,
+.main .bottom .data,
+.main .bottom .ip,
+.main .bottom .disconn
+{
+    display: flex;
+    flex-direction: column;
+}
+.main .bottom #WebSocketbtn,
+.main .bottom #selfilebtn,
+.main .bottom #sendfilebtn,
+.main .bottom #WebSocketbtn,
+.main .bottom #disWebSocketbtn,
+.main .bottom #ipbtn 
+{
+    height: 50px;
+    width:  220px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(202, 40, 40);
+    border-radius: 22px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 0.2s linear;
+    box-shadow: 0 2px 2px black;
+}
+.main .bottom #disWebSocketbtn
+{
+    background-color: rgb(34, 87, 179);
+}
+.main .bottom #ipbtn {
+    height: 40px;
+    width:  150px;
+    margin-top: 10px;
+}
+.main .bottom #WebSocketbtn:hover,
+.main .bottom #selfilebtn:hover,
+.main .bottom #sendfilebtn:hover, 
+.main .bottom #ipbtn:hover,
+.main .bottom #disWebSocketbtn:hover{
+    transform: translatex(8px);
+    /* opacity: 0.9; */
+    cursor: pointer;
+    background-color: rgb(146, 2, 2);
+}
+.main .bottom #WebSocketbtn span,
+.main .bottom #selfilebtn span,
+.main .bottom #sendfilebtn span
+{
+    margin-top: 5px;
+}
+.main .bottom #ipbtn span,
+.main .bottom #disWebSocketbtn span
+{
+    margin-top: 8px;
+}
+.main .bottom #WebSocketbtn img,
+.main .bottom #selfilebtn img,
+.main .bottom #sendfilebtn img,
+.main .bottom #ipbtn img,
+.main .bottom #disWebSocketbtn img,
+.foot #blog img  {
+    width: 20px;
+    height: 20px;
+}
+.main .bottom span {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.main .bottom .data textarea{
+    height: 100px;
+    width: 300px;
+    border-radius: 20px;
+    border: 5px solid black;
+    box-shadow: 0 1px 2px black;
+    text-align: top;
+    padding: 10px;
+}
+.main .bottom #ipbox #ipaddr{
+    border: 2px solid black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 22px;
+    width: 130px;
+    font-size: 16px;
+}
+.main .bottom #ipbox #moren {
+    display: inline;
+    background-color: black;
+    color: white;
+    padding: 3px;
+    font-size: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all 0.1s linear;
+}
+.main .bottom #ipbox #moren:hover {
+    cursor: pointer;
+    background-color: rgb(64, 64, 64);
+}
+.picpro input{
+    margin-right: 7px;
+    width: 100px;
+    height: 23px;
+    font-size: 17px;
+    line-height: 20px;
+    border: 2px solid black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.picpro {
+    font-size: 16px;
+}
+input:focus {
+    outline: 1px solid blue;
+}
+.picpro span
+{
+    color: white;
+    background-color: black;
+    padding: 3px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.picpro select {
+    /* height: 31px; */
+    padding: 3px;
+    font-size: 18px;
+}
+.picpro span:last-child{
+    color: white;
+    background-color: rgb(2, 2, 2);
+    padding: 3px;
+    border-radius: 7px;
+}
+
+.foot {
+    width: 100%;
+    height: 360px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /* background-color: rgb(114, 114, 114); */
+}
+.foot .footr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.foot #chinese {
+    font-size: 50px;
+}
+.foot #english {
+    font-size: 30px;
+    font-weight: bold;
+}
+.foot #blog {
+    height: 50px;
+    width: 200px;
+    padding: 0 10px;
+    margin-top: 20px;
+    background-color: black;
+    border-radius: 40px;
+    /* line-height: 50px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size:17px;
+    font-weight: bold;
+    text-align: center;
+}
+.foot #blog  {
+    transition: all 0.2s linear;
+}
+
+.foot #blog:hover{
+    transform: translateX(10px);
+    background-color: rgb(54, 54, 54);
+}

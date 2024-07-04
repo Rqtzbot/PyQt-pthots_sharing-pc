@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PICTURE SHARING 图片互传</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <div class="top">
+        <div class="topleft">
+            <img src="13.png" id="logo">
+            <span>PICTURE SHARING  图片互传</span>
+        </div>  
+        <ul class="ulli">
+            <li>
+                <div><a href="使用说明.png" target="_blank">使用方法</a></div>
+            </li>
+            <li id="touch">
+                <div><a href="qq.jpg" target="_blank">联系方式</a></div>
+            </li>
+            <li>
+                <div> <a href="https://blog.csdn.net/m0_75192474?type=blog" target="_blank">CSDN博客</a></div>
+            </li>
+            <li>
+                 <div> <a href="https://github.com/Rqtzbot" target="_blank">GITHUP</a></div>
+            </li>
+            <li>
+                 <span id="commuction">通信关闭中</span>
+            </li>
+        </ul>
+    </div>
+    <!-- 中间主页 -->
+    <div class="main">
+        <div class="content">
+            <div class="up">
+                <div class="showdata">
+                    <img class="fengche" src="风车.png" alt="" width="40px" height="40px">
+                    <span id="wel">
+                        Welcome to use picture sharing
+                    </span>
+                        
+                    <div class="pictype">
+                        <ul>
+                            <li>PNG</li>
+                            <li>JPG</li>
+                            <li>JPEG</li>
+                            <li>BMP</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="showpic">
+                    <div id="pic">
+                        <img src="image.png" alt="" id="photos" >
+                    </div>
+                    <div class="picpro">
+                        <span>像素</span><input type="text" id="px">
+                        <span>名称</span><input type="text" id="name">
+                        <span>内存</span><input type="text" id="ram">    
+                        <span>类型</span><input type="text" id="type"> 
+                        <span>等比缩放倍数</span><select id="selectment">
+                            <option value="option1">2.5</option>
+                            <option value="option2">1.5</option>
+                            <option value="option3">0.5</option>
+                        </select>
+                    </div>
+                </div>
+
+                
+                
+            </div>
+            <hr>
+            <div class="bottom">
+                    <input type="file" id="fileinput" accept=".png, .jpg, .bmp, .jpeg">    
+                    <div class="data">
+                        <span>信息输出</span>
+                        <textarea id="dataval"></textarea>
+                    </div>
+                    <div class="ip">
+                        <span>输入服务器IP地址</span>
+                        <div id="ipbox">
+                            <input  type="text" id="ipaddr" placeholder="192.168.xxx.xxx"><div id="moren">设为默认</div>
+                        </div>
+                        <div id="ipbtn">
+                            <span>立即绑定</span>
+                            <img src="右箭头.png" alt="" >
+                        </div>
+                       
+                    </div>
+                    <div class="websocket">
+                        <span>WebSocket建立连接</span>
+                        <div id="WebSocketbtn">
+                            <span>连接WebSocket</span>
+                            <img src="右箭头.png" alt="" >
+                        </div>
+                    </div>
+                   
+                   <div class="selfile">
+                     <span>选择图片文件，图片最大为7MB</span>
+                     
+                     <div id="selfilebtn">
+                            <span>选择图片并发送</span>
+                            
+                            <img src="右箭头.png" alt="" >
+                     </div>
+                   </div>
+                   <div class="sendfile">
+                            <span>保存图片</span>
+                            <div id="sendfilebtn">
+                                <a href="" id="sendpic">点击保存图片</a>
+                                <img src="右箭头.png" alt="" >
+                            </div>  
+                  
+                    </div>
+                    <div class="disconn">
+                            <span>断开websocket</span>
+                            <div id="disWebSocketbtn">
+                                <span>断开连接</span>
+                                <img src="右箭头.png" alt="" >
+                            </div>   
+                    </div>
+               
+                <div>
+            </div>
+         </div>
+    </div>
+    <!-- 下方页脚 -->
+    <div class="foot">
+        <div class="footl">
+            <img src="13.png" alt="">
+        </div>
+        <div class="footr">
+            <span id="english">Sharing the Beauty of IT and 
+                Creating the Future of Machines Together</span>
+                <div id="blog">
+                    <a href="https://blog.csdn.net/m0_75192474?type=blog" target="_blank">Blog Homepage</a>
+                    <img src="右箭头.png" alt="" >
+                </div>
+        </div>
+    </div>
+    <script src="web.js"></script>
+    <!-- FileSaver.js库保存图片 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/FileSaver.js/2.0.5/FileSaver.js"></script>
+</body>
+</html>
